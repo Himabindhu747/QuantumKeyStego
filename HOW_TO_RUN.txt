@@ -1,0 +1,50 @@
+
+QuantumKeyStego - HOW TO RUN
+============================
+
+This guide helps you run the Quantum-Aware Steganographic Key Exchange System.
+
+PREREQUISITES:
+--------------
+- Python 3.7+
+- Required Python libraries:
+  pip install opencv-python pillow pycryptodome numpy
+
+PROJECT STRUCTURE:
+------------------
+QuantumKeyStego/
+├── main.py
+├── key_utils.py
+├── stego_encoder.py
+├── stego_decoder.py
+├── compression.py
+├── quantum_sim.py           # (Optional - not implemented yet)
+├── README.md
+├── HOW_TO_RUN.txt           # (This file)
+└── test_data/
+    ├── cover_image.png      # Add your test image here
+    ├── stego_image.png      # Auto-generated
+    ├── stego_image_compressed.bin
+    ├── stego_image_decompressed.png
+    └── recovered_key.txt
+
+STEPS TO RUN:
+-------------
+1. Add a PNG image named 'cover_image.png' inside the 'test_data' folder.
+   - Recommended size: at least 256x256 pixels.
+
+2. Open terminal or IDE in the project directory.
+
+3. Run the main script:
+   python main.py
+
+4. Output:
+   - Displays original and recovered key (in hex)
+   - Confirms whether integrity check passed
+   - Saves recovered key to 'test_data/recovered_key.txt'
+
+NOTES:
+------
+- The system uses LSB of the blue channel for steganography.
+- Compression is done using zlib before simulated transmission.
+- Make sure the cover image is large enough to hold the binary key.
