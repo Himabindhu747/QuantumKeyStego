@@ -53,10 +53,10 @@ pip install opencv-python pillow pycryptodome numpy
    python main.py
 
 3. Outputs:
-- Stego image with embedded key
-- Compressed image file
-- Extracted and verified key
-- Console log showing integrity verification result
+    - Stego image with embedded key
+    - Compressed image file
+    - Extracted and verified key
+    - Console log showing integrity verification result
 
 # 🔐 Security Features
 - Bitwise LSB embedding on the blue channel
