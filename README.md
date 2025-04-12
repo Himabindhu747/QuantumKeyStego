@@ -11,15 +11,24 @@ The system enables:
 
 # 📁 Repository Structure
 QuantumKeyStego/
-├── main.py                      -- # Full pipeline execution
-├── key_utils.py                -- # Key generation, encryption, hashing
+├── main.py                      # Full pipeline execution
+
+├── key_utils.py                # Key generation, encryption, hashing
+
 ├── stego_encoder.py             # LSB embedding into blue channel
+
 ├── stego_decoder.py             # LSB extraction and key reconstruction
+
 ├── compression.py               # zlib-based compression/decompression
+
 ├── quantum_sim.py               # (Optional) placeholder for quantum simulations
+
 ├── HOW_TO_RUN.txt               # Step-by-step execution instructions
+
 ├── README.md                    # This file
+
 └── test_data/
+
     ├── cover_image.png          # Input image for testing
     ├── stego_image.png          # Output image with embedded key
     ├── stego_image_compressed.bin
