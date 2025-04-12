@@ -11,6 +11,7 @@ The system enables:
 
 # 📁 Repository Structure
 QuantumKeyStego/
+
 ├── main.py                      # Full pipeline execution
 
 ├── key_utils.py                # Key generation, encryption, hashing
@@ -30,10 +31,15 @@ QuantumKeyStego/
 └── test_data/
 
     ├── cover_image.png          # Input image for testing
+    
     ├── stego_image.png          # Output image with embedded key
+    
     ├── stego_image_compressed.bin
+    
     ├── stego_image_decompressed.png
+    
     └── recovered_key.txt        # Final extracted key (hex)
+    
 
 # ⚙️ Dependencies
 Install required Python libraries:
