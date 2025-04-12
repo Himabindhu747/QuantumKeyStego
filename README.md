@@ -1,13 +1,15 @@
 # Secure Key Transmission Using Quantum-Aware Image Steganography
 This repository implements a post-quantum compatible framework for secure cryptographic key exchange using LSB-based steganography and compression techniques. The system is designed for robust, lightweight, and integrity-verifiable transmission of keys over untrusted networks or cloud environments.
-🧠 Project Overview
+
+# 🧠 Project Overview
 The system enables:
 - Generation of a secure 256-bit key
 - Optional encryption or hashing (AES/SHA-256)
 - Bitwise conversion of key and LSB embedding into the blue channel of an image
 - zlib-based compression and simulated transmission
 - Key extraction and SHA-256 integrity verification
-📁 Repository Structure
+
+# 📁 Repository Structure
 QuantumKeyStego/
 ├── main.py                      # Full pipeline execution
 ├── key_utils.py                 # Key generation, encryption, hashing
@@ -23,11 +25,13 @@ QuantumKeyStego/
     ├── stego_image_compressed.bin
     ├── stego_image_decompressed.png
     └── recovered_key.txt        # Final extracted key (hex)
-⚙️ Dependencies
+
+# ⚙️ Dependencies
 Install required Python libraries:
 
 pip install opencv-python pillow pycryptodome numpy
-🚀 How to Run
+
+# 🚀 How to Run
 1. Add a 256x256 or larger PNG image as test_data/cover_image.png
 2. Run the main pipeline:
 
@@ -38,17 +42,21 @@ pip install opencv-python pillow pycryptodome numpy
 - Compressed image file
 - Extracted and verified key
 - Console log showing integrity verification result
-🔐 Security Features
+
+# 🔐 Security Features
 - Bitwise LSB embedding on the blue channel
 - Optional AES encryption or SHA-256 hashing
 - End-to-end key integrity verification using hash comparison
 - Post-quantum cryptographic compatibility
-📊 Future Work
+
+# 📊 Future Work
 - Add support for quantum key distribution simulation (QKD)
 - Include quantum image embedding models (FRQI, NEQR)
 - Extend to support secure multi-key embedding
-📄 License
+
+# 📄 License
 This project is intended for academic, research, and educational use only. All rights reserved by the original author.
-📬 Contact
+
+# 📬 Contact
 For any queries or collaboration requests, please contact:
 📧 himabindu747@gmail.com
