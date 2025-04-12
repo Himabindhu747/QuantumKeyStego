@@ -1,5 +1,4 @@
-# QuantumKeyStego
-Secure Key Transmission Using Quantum-Aware Image Steganography
+# Secure Key Transmission Using Quantum-Aware Image Steganography
 This repository implements a post-quantum compatible framework for secure cryptographic key exchange using LSB-based steganography and compression techniques. The system is designed for robust, lightweight, and integrity-verifiable transmission of keys over untrusted networks or cloud environments.
 🧠 Project Overview
 The system enables:
